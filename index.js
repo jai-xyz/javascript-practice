@@ -48,8 +48,21 @@ console.log(`More Improvement!!!`);
 // }
 
 
-const min = 100;
-const max = 200;
+// const min = 100;
+// const max = 200;
 
-let randomNum = Math.floor(Math.random() * (max - min)) + min;
-console.log(randomNum);
+// let randomNum = Math.floor(Math.random() * (max - min)) + min;
+// console.log(randomNum);
+
+//    function add() {
+//       // Get references to input elements
+//       const firstNum = document.getElementById("firstnum").value;
+//       const secondNum = document.getElementById("secondnum").value;
+
+//       // Calculate sum (assuming numbers are valid)
+//       const sum = Number(firstNum) + Number(secondNum);
+
+//       // Display the result
+//       const displayResult = document.getElementById("displayResult");
+//       displayResult.textContent = sum;
+//     }
