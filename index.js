@@ -156,8 +156,124 @@ console.log(`More Improvement!!!`);
 
     // TODO: enhanced for loop
     
-let sports = ["volleyball", "basketball", "soccer", "baseball"];
+// let sports = ["volleyball", "basketball", "soccer", "baseball"];
 
-for (let sport of sports){
-    console.log(sport);
+// for (let sport of sports){
+//     console.log(sport);
+// }
+
+// function rollDice(){
+//         const numDice = document.getElementById("numDice").value;
+//         const diceImages = document.getElementById("diceImages");
+//         const result = document.getElementById("result");
+//         const values = [];
+//         const images = [];
+
+//         for(let i = 0; i < numDice; i++){
+//             const value = Math.floor(Math.random() * 6 ) + 1;
+//             values.push(value);
+//             images.push(`<img src="imgs/${value}.png" alt="Dice ${value}">`);
+//         }
+
+//         result.textContent = `${values.join(', ')}`;
+//         diceImages.innerHTML = images.join('');
+
+// }
+
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// numbers.forEach(display);
+
+// function display(element){
+//     console.log(element);
+// }
+
+// let fruits = ["apple", "banana", "watermelon", "strawberry"];
+
+// fruits.forEach(upperCase);
+// fruits.forEach(display);
+
+
+// function upperCase(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let evenNums = numbers.filter(isEven);
+
+// console.log(isEven);
+
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+
+// function isOdd(element){
+//     return element % 2 !== 0;
+// }
+
+
+
+// const prices = [200, 120, 150, 210, 216];
+
+// const total = prices.reduce(sum);
+
+
+// console.log(`P${total}`);
+
+
+
+// function sum(accumulation, elements){
+//     return accumulation + elements;
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let numCube = numbers.map(function (element){
+//     return Math.pow(element, 4);
+// });
+
+// console.log(numCube);
+
+// const yourName = (name, age) =>  {console.log(`My name is ${name}`)
+//                             console.log(`I'm ${age} years old.`)};    
+// yourName("Jairo", 23);
+
+// function greetWithDelay(name, delay) { setTimeout(() => console.log(`Hello! ${name}`), delay)};
+
+
+// greetWithDelay("Jairo", 3000);
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let cubes = nums.map((element) => Math.pow(element, 4));
+
+// console.log(cubes);
+
+
+// const student1 = {
+//     firstName: "Mike",
+//     course: "BSIT",
+//     sayYourName: function(){console.log(`Hi! My name is ${this.firstName}`)}
+// }
+
+// student1.sayYourName();
+
+
+function Player(name, position, team){
+    this.name = name;
+    this.position = position;
+    this.team = team;
 }
+
+const player1 = new Player("Kyrie", "Point Guard", "Mavericks");
+const player2 = new Player("Luka", "Small Forward", "Mavericks");
+const player3 = new Player("Edwards", "Shooting Guard", "Timberwolves");
+
+console.log(`My player is ${player1.name} with the position of ${player1.position}`);
