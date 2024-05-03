@@ -279,28 +279,144 @@ console.log(`More Improvement!!!`);
 // console.log(`My player is ${player1.name} with the position of ${player1.position}`);
 
 
-class Students{
-    studying = true;
+// class Students{
+//     studying = true;
 
-    isReading() {
-        console.log(`${this.name} is reading manga.`);
-    }
+//     isReading() {
+//         console.log(`${this.name} is reading manga.`);
+//     }
 
-    isWriting(){
-        console.log(`${this.name} is writing about his journal.`);
-    }
-}
+//     isWriting(){
+//         console.log(`${this.name} is writing about his journal.`);
+//     }
+// }
 
-class Student1 extends Students{
-    name = "Mike";
-}
-
-
-class Student2 extends Students{
-    name = "Kiel";
-}
+// class Student1 extends Students{
+//     name = "Mike";
+// }
 
 
-const student1 = new Students();
+// class Student2 extends Students{
+//     name = "Kiel";
+// }
 
-student1.isReading();
+
+// const student1 = new Student1();
+
+// student1.isReading();
+
+
+
+// class Motors{
+//     isParked = true;
+
+//     isRunning(){
+//         console.log(`His ${this.name} was running 160kph`);
+//     }
+
+//     isUnderMaintenance(){
+//         console.log(`His ${this.name} was on the motorshop since last week.`);
+//     }
+// }
+
+// class Raider extends Motors{
+//     name = "Raider";
+
+// }
+
+// class HondaBeat extends Motors{
+//     name = "HondaBeat";
+
+// }
+
+// class PCX extends Motors{
+//     name = "PCX";
+// }
+
+
+// const raider = new Raider();
+// const hondabeat = new HondaBeat();
+
+
+// hondabeat.isUnderMaintenance();
+// raider.isRunning();
+
+
+// let timeOutId;
+
+// function start(){
+//     timeOutId = setTimeout(() => window.alert("Hello!"), 5000);
+//     console.log("Started");
+// }
+
+// function clearTimer(){
+//     clearTimeout(timeOutId);
+//     console.log("Cleared");
+// }
+
+
+// function updateClock(){
+//     dateNow = new Date();
+//     const hours = dateNow.getHours().toString().padStart();
+//     const minutes = dateNow.getMinutes().toString().padStart();
+//     const seconds = dateNow.getSeconds().toString().padStart();
+//     const displayHours = `${hours}:${minutes}:${seconds}`
+//     document.getElementById("displayClock").textContent = displayHours;
+
+// }
+
+
+// updateClock()
+// setInterval(updateClock, 1000);
+
+// const display = document.getElementById("displayTime");
+// let timer = null;
+// let startTime = 0; 
+// let elapsedTime = 0;
+// let isRunning = false;
+
+// function start(){
+//     if(!isRunning){
+//         startTime = Date.now() - elapsedTime;
+//         timer = setInterval(update, 10);
+//         isRunning = true;
+//     }
+// }
+
+// function stop(){
+//     if(isRunning){
+//         clearInterval(timer);
+//         elapsedTime = Date.now() - startTime;
+//         isRunning = false;
+//     }
+// }
+
+// function reset(){
+//     if(isRunning){
+//         clearInterval(timer);
+//         startTime = 0;
+//         elapsedTime = 0;
+//         isRunning = false;
+//         display.textContent = "00:00:00:00";
+//     }
+// }
+
+
+// function update(){
+//     const currentTime = Date.now();
+//     elapsedTime = currentTime - startTime;
+
+//     let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+//     let minutes = Math.floor(elapsedTime / (1000 * 60) % 60);
+//     let second = Math.floor(elapsedTime / (1000 % 60));
+//     let millisecond = Math.floor(elapsedTime % 1000 / 10);
+
+//     hours = String(hours).padStart(2, "0");
+//     minutes = String(minutes).padStart(2, "0");
+//     second = String(second).padStart(2, "0");
+//     millisecond = String(millisecond).padStart(2, "0");
+
+//     display.textContent = `${hours}:${minutes}:${second}:${millisecond}`;
+// }
+
+
