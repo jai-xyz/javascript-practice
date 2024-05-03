@@ -266,14 +266,41 @@ console.log(`More Improvement!!!`);
 // student1.sayYourName();
 
 
-function Player(name, position, team){
-    this.name = name;
-    this.position = position;
-    this.team = team;
+// function Player(name, position, team){
+//     this.name = name;
+//     this.position = position;
+//     this.team = team;
+// }
+
+// const player1 = new Player("Kyrie", "Point Guard", "Mavericks");
+// const player2 = new Player("Luka", "Small Forward", "Mavericks");
+// const player3 = new Player("Edwards", "Shooting Guard", "Timberwolves");
+
+// console.log(`My player is ${player1.name} with the position of ${player1.position}`);
+
+
+class Students{
+    studying = true;
+
+    isReading() {
+        console.log(`${this.name} is reading manga.`);
+    }
+
+    isWriting(){
+        console.log(`${this.name} is writing about his journal.`);
+    }
 }
 
-const player1 = new Player("Kyrie", "Point Guard", "Mavericks");
-const player2 = new Player("Luka", "Small Forward", "Mavericks");
-const player3 = new Player("Edwards", "Shooting Guard", "Timberwolves");
+class Student1 extends Students{
+    name = "Mike";
+}
 
-console.log(`My player is ${player1.name} with the position of ${player1.position}`);
+
+class Student2 extends Students{
+    name = "Kiel";
+}
+
+
+const student1 = new Students();
+
+student1.isReading();
