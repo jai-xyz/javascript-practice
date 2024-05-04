@@ -1,3 +1,9 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 /* #countNum{
     display: block;
     text-align: center;
@@ -152,3 +158,71 @@ button{
     font-family: monospace;
     font-size: 2rem;
 } */
+
+/* 
+.container{
+   width: 25%;
+   margin: 75px auto;
+background-color: rgb(45, 45, 45);
+border-radius: 10px;
+border: none;
+max-width: 500px;
+}
+
+.calculator-input input{
+    width:100%;
+    border-top-left-radius:  10px;
+    border-top-right-radius:  10px;
+    border: none;
+    padding: 20px;
+    height: 75px;
+    background-color: gray;
+    overflow: hidden;
+    font-size: 1.8rem;
+    text-align: right;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.calculator-nums{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 2px;
+ padding: 10px;
+ justify-content: space-evenly;
+}
+
+
+.calculator-nums button{
+    border: none;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    color: #FFF;
+    background-color: gray;
+    font-size: 1.3rem;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.calculator-nums button:hover{
+
+    background-color: rgb(109, 109, 109);
+}
+
+#symbol{
+   text-transform:capitalize;
+}
+
+#symbol:hover{
+    background-color: rgb(235, 165, 2);
+} 
+*/
+
+.myBtn{
+    padding: 20px 35px;
+    border: none;
+    font-size: 1.2rem;
+    display: flex;
+    margin: 5px;
+}

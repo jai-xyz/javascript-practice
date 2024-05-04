@@ -420,3 +420,63 @@ console.log(`More Improvement!!!`);
 // }
 
 
+// const display = document.getElementById("display");
+
+// function appendToDisplay(input){
+//     display.value += input;
+// }
+
+// function clearDisplay(){
+//     display.value = "";
+// }
+
+// function calculate(){
+//     display.value = eval(display.value);
+// }
+
+
+// const welcome = document.getElementById("msg");
+// const username = "";
+
+// welcome.textContent += username === "" ? 'Guest' : username;
+
+// const element = document.querySelector('.welcome');
+
+// element.style.backgroundColor = "red"; 
+
+
+// const msg = document.getElementById("msg");
+// const btn = document.getElementById("myBtn");
+
+// btn.addEventListener("click", event => {
+//     msg.style.color = "red";
+//     msg.style.textTransform = "uppercase";
+// });
+
+// btn.addEventListener("mouseover", event => {
+//     msg.style.color = "blue";
+//     msg.style.textTransform = "lowercase"
+// });
+
+// btn.addEventListener("mouseout", event => {
+//     msg.style.color = "black";
+//     msg.style.textTransform = "capitalize";
+// });
+
+// const changer = document.getElementById("changer");
+// const hide = document.getElementById("hide-show");
+
+// let buttons = document.querySelectorAll(".myBtn");
+
+// changer.addEventListener("click", event => {
+//     buttons.forEach(button => {
+//         button.style.color = "white";
+//         button.style.backgroundColor = "green";
+//     });
+// });
+
+// hide.addEventListener("click", event =>{
+//     hide.textContent = hide.textContent === "Hide" ? "Show" : "Hide";
+//     buttons.forEach(button =>
+//         button.style.display = hide.textContent === "Show" ? "Block" : "none");
+// })
