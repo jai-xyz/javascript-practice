@@ -480,3 +480,89 @@ console.log(`More Improvement!!!`);
 //     buttons.forEach(button =>
 //         button.style.display = hide.textContent === "Show" ? "Block" : "none");
 // })
+
+
+
+// const choices = ["rock", "paper", "scissors"];
+// const playerDisplay = document.getElementById("playerDisplay");
+// const computerDisplay = document.getElementById("computerDisplay");
+// const result = document.getElementById("result");
+// const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+// const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+// const resultDisplay = document.getElementById("result");
+
+// let playerScore = 0;
+// let computerScore = 0;
+
+// function playGame(playerChoice){
+
+//     const computerChoice = choices[Math.floor(Math.random() * 3)];
+//     let result = "";
+
+//     if(playerChoice === computerChoice){
+//         result = "It's a TIE!";
+//     }
+//     else{
+//         switch(playerChoice){
+//             case "rock":
+//                 result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+//                 break;
+//             case "paper":
+//                     result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+//                     break;
+//             case "scissors":
+//                 result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
+//                 break;
+//         }
+//     }
+
+
+
+//     resultDisplay.style.color = (result === "YOU WIN!") ? "blue" :
+//                                 (result === "YOU LOSE!") ? "red" : "black";
+ 
+//     playerDisplay.textContent = `${playerChoice}`;
+//     computerDisplay.textContent = `${computerChoice}`;
+//     resultDisplay.textContent = `${result}`;
+
+    
+//     playerScoreDisplay.textContent = (result === "YOU WIN!") ? playerScore++ : 
+//                                      (result === "YOU LOSE!") ? computerScore++ : playerScore;
+                             
+                                     
+//     playerScoreDisplay.textContent = `${playerScore}`;
+//     computerScoreDisplay.textContent = `${computerScore}`;
+
+// }
+
+
+function jog(){
+    return new Promise ((resolve, reject) =>{
+        setTimeout(() => {
+            resolve(`Done jogging.`);
+        }, 1500);
+    });
+}
+
+function changeClothes(){
+    return new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            resolve(`Done changing clothes.`)
+        }, 1000);
+    });
+}
+
+function eatBreakfast(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`Done eating breakfast`);
+        }, 2000);
+    });
+}
+
+
+jog().then(value => {console.log(value); 
+    return changeClothes().then(value => {console.log(value); 
+    return eatBreakfast().then(value => {console.log(value); 
+        console.log(`Done doing morning routine`);
+    })})});
