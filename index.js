@@ -536,33 +536,69 @@ console.log(`More Improvement!!!`);
 // }
 
 
-function jog(){
-    return new Promise ((resolve, reject) =>{
-        setTimeout(() => {
-            resolve(`Done jogging.`);
-        }, 1500);
-    });
+// function jog(){
+//     return new Promise ((resolve, reject) =>{
+//         setTimeout(() => {
+//             resolve(`Done jogging.`);
+//         }, 1500);
+//     });
+// }
+
+// function changeClothes(){
+//     return new Promise((resolve, reject) =>{
+//         setTimeout(() => {
+//             resolve(`Done changing clothes.`)
+//         }, 1000);
+//     });
+// }
+
+// function eatBreakfast(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(`Done eating breakfast`);
+//         }, 2000);
+//     });
+// }
+
+
+// jog().then(value => {console.log(value); 
+//     return changeClothes().then(value => {console.log(value); 
+//     return eatBreakfast().then(value => {console.log(value); 
+//         console.log(`Done doing morning routine`);
+//     })})});
+
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+//         .then(response => {
+//             if (!response.ok) {
+//                     throw new Error("Could not fetch resource");
+//             }
+//             return response.json();
+//         })
+//         .then(data => console.log(data.id))
+//         .catch(error => console.error(error));
+
+
+async function fetchData(){
+
+    try {
+        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+        if (!response.ok) {
+            throw new Error("Could not fetch data.");
+        }
+
+        const data = await response.json();
+        const pokemonSprite = data.sprites.front_default;
+        const img = document.getElementById("pokemonSprite");
+
+        img.src = pokemonSprite;
+
+        // pokemonSprite.style.display = "block";
+
+        document.getElementById("pokemonNameDisplay").textContent = pokemonName;
+
+    } catch (error) {
+        console.error(error);
+    }
 }
-
-function changeClothes(){
-    return new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            resolve(`Done changing clothes.`)
-        }, 1000);
-    });
-}
-
-function eatBreakfast(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(`Done eating breakfast`);
-        }, 2000);
-    });
-}
-
-
-jog().then(value => {console.log(value); 
-    return changeClothes().then(value => {console.log(value); 
-    return eatBreakfast().then(value => {console.log(value); 
-        console.log(`Done doing morning routine`);
-    })})});
